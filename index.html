@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang = "pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css.css" />
+        <link rel = "icon" href = 
+        "https://cdn-icons-png.flaticon.com/512/6733/6733817.png"/>
+        <title>Cadastro</title>
+    </head>
+        <body>
+            <h1>Preencha o formulário</h1><br/>
+            <div class="container">
+                <div class="all">
+                    <form action="ativ.Interdiciplinar.php" method="post">
+                        <input id = "usuario" type = "text" placeholder="usuário" name="usuario" required/>
+                        <br/><br/>
+                        <input id = "senha" type = "password" placeholder="senha" name="senha" required/>
+                        <br/><br/>
+                        <button>Enviar</button><button onclick="apagar()">Cancelar</button>
+                        <br/>
+                    </form>
+                </div>
+            </div>
+            <script>
+                function apagar(){
+                    document.getElementById("usuario").value = "";
+                    document.getElementById("senha").value = "";
+                }
+
+            </script>
+        </body>
+</html>
